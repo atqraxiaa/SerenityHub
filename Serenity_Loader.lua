@@ -1,5 +1,5 @@
 local HttpService = game:GetService("HttpService")
-local jsonUrl = "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Serenity.json"
+local jsonUrl = "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/Serenity_Loader.json"
 
 local success, data = pcall(function()
     local response = game:HttpGet(jsonUrl)
