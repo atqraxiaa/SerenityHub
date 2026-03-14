@@ -23,7 +23,7 @@
 All user settings are saved to a JSON file for persistence between sessions.
 
 ```
-/workspace/Serenity/SerenityConfig.json
+/Workspace/Serenity_Main/MainConfig.json
 ```
 
 You can reset the configuration anytime through the GUI.
@@ -34,7 +34,7 @@ You can reset the configuration anytime through the GUI.
 
 1. **Execute the script** in your preferred Roblox executor.
 ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/atqraxiaa/Serenity/refs/heads/main/Serenity.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Serenity_Loader.lua"))()
 ```
 2. Wait a few seconds for the UI to initialize.
 3. Configure your desired options in the **Config** and **Server** tabs.
@@ -73,7 +73,6 @@ Example webhook output:
 
 - 💜 **Developed by:** `allyqnts`
 - 🌀 **UI Framework:** [WindUI by Footagesus](https://github.com/Footagesus/WindUI)
-- 🌐 **Script Hosting:** GitHub
 
 ---
 
