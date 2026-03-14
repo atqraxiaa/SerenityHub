@@ -14,7 +14,7 @@ end
 local Games = data.Games or {}
 local Fallback = data.Fallback
 
-local currentGameId = tostring(game.GameId)
+local currentGameId = tostring(game.PlaceId)
 local scriptUrl = Games[currentGameId] or Fallback
 
 pcall(function()
