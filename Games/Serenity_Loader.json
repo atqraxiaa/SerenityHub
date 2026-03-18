@@ -1,6 +1,7 @@
 {
     "Games": {
-        "79305036070450": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/spinabaddie.lua"
+        "79305036070450": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/spinabaddie.lua",
+        "81318904502331": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/superforest.lua"
     },
     
     "Fallback": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/main.lua"
