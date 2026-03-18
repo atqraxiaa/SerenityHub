@@ -17,6 +17,15 @@ local Fallback = data.Fallback
 local currentGameId = tostring(game.PlaceId)
 local scriptUrl = Games[currentGameId] or Fallback
 
+if not scriptUrl then
+    warn("No script found for this game and no fallback provided!")
+    return
+end
+
+print("Loading script for PlaceId:", currentGameId)
+print("Script URL:", scriptUrl)
+
 pcall(function()
-    loadstring(game:HttpGet(scriptUrl))()
+    local scriptContent = game:HttpGet(scriptUrl)
+    loadstring(scriptContent)()
 end)
