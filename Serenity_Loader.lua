@@ -8,7 +8,6 @@ end)
 
 if not success then
     warn("Failed to load JSON")
-    setclipboard("Failed to load JSON")
     return
 end
 
