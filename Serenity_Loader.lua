@@ -1,15 +1,8 @@
 local HttpService = game:GetService("HttpService")
 local jsonUrl = "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/Serenity_Loader.json"
 
-local success, data = pcall(function()
-    local response = game:HttpGet(jsonUrl)
-    return HttpService:JSONDecode(response)
-end)
-
-if not success then
-    warn("Serenity Loader: Failed to load JSON from GitHub")
-    return
-end
+local response = game:HttpGet(jsonUrl)
+local data = HttpService:JSONDecode(response)
 
 local Games = data.Games or {}
 local Fallback = data.Fallback
@@ -22,10 +15,14 @@ if not scriptUrl then
     return
 end
 
-print("Loading script for PlaceId:", currentGameId)
 print("Script URL:", scriptUrl)
 
-pcall(function()
-    local scriptContent = game:HttpGet(scriptUrl)
-    loadstring(scriptContent)()
-end)
+local scriptContent = game:HttpGet(scriptUrl)
+local func = loadstring(scriptContent)
+
+if not func then
+    warn("Failed to compile script!")
+    return
+end
+
+func()
