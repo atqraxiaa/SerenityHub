@@ -1,6 +1,6 @@
-if game.PlaceId ~= 97598239454123 then
-    return
-end
+-- if game.PlaceId ~= 97598239454123 then
+--     return
+-- end
 
 -- if _G.SerenityHubGag2Loaded then
 --     return
