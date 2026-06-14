@@ -2,11 +2,11 @@ if game.PlaceId ~= 97598239454123 then
     return
 end
 
-if _G.SerenityHubGag2Loaded then
-    return
-end
+-- if _G.SerenityHubGag2Loaded then
+--     return
+-- end
 
-_G.SerenityHubGag2Loaded = true
+-- _G.SerenityHubGag2Loaded = true
 
 local player = game.Players.LocalPlayer
 if not player then return end
