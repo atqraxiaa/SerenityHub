@@ -1,13 +1,12 @@
 if game.PlaceId ~= 97598239454123 then
-    game.Players.LocalPlayer:Kick("Error: This script is not supported in this game.")
     return
 end
 
--- if _G.SerenityHubGag2Loaded then
---     return
--- end
+if _G.SerenityHubGag2Loaded then
+    return
+end
 
--- _G.SerenityHubGag2Loaded = true
+_G.SerenityHubGag2Loaded = true
 
 local player = game.Players.LocalPlayer
 if not player then return end
