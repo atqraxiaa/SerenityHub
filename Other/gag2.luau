@@ -297,9 +297,6 @@ local infiniteYieldToggle = Tab:Toggle({
     Box = true,
     Default = config.autoOpenInfiniteYield,
     Callback = function(state)
-        if state then
-            openInfiniteYield()
-        end
         config.autoOpenInfiniteYield = state
         saveConfig()
     end
@@ -321,9 +318,6 @@ local speedHubXToggle = Tab:Toggle({
     Box = true,
     Default = config.autoOpenSpeedHubX,
     Callback = function(state)
-        if state then
-            openSpeedHubX()
-        end
         config.autoOpenSpeedHubX = state
         saveConfig()
     end
@@ -345,9 +339,6 @@ local luminHubToggle = Tab:Toggle({
     Box = true,
     Default = config.autoOpenLuminHub,
     Callback = function(state)
-        if state then
-            openLuminHub()
-        end
         config.autoOpenLuminHub = state
         saveConfig()
     end
