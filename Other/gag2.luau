@@ -96,7 +96,8 @@ local config = {
     autoReconnect = false,
     fpsBoost = false,
     autoOpenInfiniteYield = false,
-    autoOpenSpeedHubX = false
+    autoOpenSpeedHubX = false,
+    autoOpenLuminHub = false
 }
 
 local HttpService = game:GetService("HttpService")
@@ -333,6 +334,30 @@ speedHubXToggle:Set(config.autoOpenSpeedHubX)
 if config.autoOpenSpeedHubX then
     openSpeedHubX()
 end
+
+local function openLuminHub()
+    loadstring(game:HttpGet("http://luminon.top/loader.lua"))()
+end
+
+local luminHubToggle = Tab:Toggle({
+    Title = "Auto Open Lumin Hub",
+    Desc = "Loads the Lumin Hub script.\nUse this only if Lumin Hub is not already in your autoexec folder.",
+    Box = true,
+    Default = config.autoOpenLuminHub,
+    Callback = function(state)
+        if state then
+            openLuminHub()
+        end
+        config.autoOpenLuminHub = state
+        saveConfig()
+    end
+})
+
+luminHubToggle:Set(config.autoOpenLuminHub)
+
+if config.autoOpenLuminHub then
+    openLuminHub()
+end 
 
 Tab:Button({
     Title = "Enable Walk Fling",
