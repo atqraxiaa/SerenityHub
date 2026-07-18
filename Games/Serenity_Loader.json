@@ -2,11 +2,11 @@
     "Games": {
         "79305036070450": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/spinabaddie.lua",
         "81318904502331": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/superforest.lua",
-        "97598239454123": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/gag2.lua",
-        "133438856880402": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/gag2.lua",
-        "77085202503540": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/gag2.lua",
-        "73504898027860": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/gag2.lua",
-        "107289568786498": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/gag2.lua"
+        "97598239454123": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/Grow%20a%20Garden%202/Main.luau",
+        "133438856880402": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/Grow%20a%20Garden%202/Main.luau",
+        "77085202503540": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/Grow%20a%20Garden%202/Main.luau",
+        "73504898027860": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/Grow%20a%20Garden%202/Main.luau",
+        "107289568786498": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/Grow%20a%20Garden%202/Main.luau"
     },
     
     "Fallback": "https://raw.githubusercontent.com/atqraxiaa/SerenityHub/refs/heads/main/Games/main.lua"
