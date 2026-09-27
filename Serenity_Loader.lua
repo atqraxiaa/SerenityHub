@@ -12,19 +12,18 @@ if not success then
 end
 
 local Games = data.Games or {}
-local Fallback = data.Fallback
-
 local currentGameId = tostring(game.PlaceId)
-local scriptUrl = Games[currentGameId] or Fallback
+local scriptUrl = Games[currentGameId]
 
 if not scriptUrl then
-    warn("No script found for this game")
+    warn("No script found for this game: " .. currentGameId)
     return
 end
 
 local ok, err = pcall(function()
     loadstring(game:HttpGet(scriptUrl))()
 end)
+
 if not ok then
-    warn("Failed to execute script: "..tostring(err))
+    warn("Failed to execute script: " .. tostring(err))
 end
